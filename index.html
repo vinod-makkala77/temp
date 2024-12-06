@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Login</title>
+    <style>
+        /* Basic styling for the logo */
+        .logo {
+            display: flex;
+            justify-content: flex-start; /* Align logo to the left */
+            padding: 20px; /* Add some padding to the top */
+            position: absolute;
+            top: 20px; /* Adjust top position */
+            left: 20px; /* Adjust left position */
+        }
+
+        .logo  {
+            height: 100px; /* Set the size of the logo */
+            width:500px; /* Maintain aspect ratio */
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 80px; /* Space between logo and form */
+            width: 100%;
+        }
+
+        .box {
+            text-align: center;
+            padding: 20px;
+            box-shadow: 5px 6px 6px 6px rgb(227, 210, 210);
+            width: 320px;
+        }
+
+        .box1, .box2 {
+            padding: 10px;
+            height: 40px;
+            font-size: large;
+            margin: 10px;
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ddd;
+        }
+
+        .arr {
+            width: 200px;
+            height: 30px;
+            padding-left: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo Section -->
+    <div class="logo">
+        <img src="img/li.jpg" alt="LinkedIn Logo">
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="head">
+        <div class="box">
+            <h1 id="h">Sign in</h1>
+            <p>Stay updated on your professional world.</p>
+            <input type="text" placeholder="Email or Phone" class="arr"><br><br>
+            <input type="password" placeholder="Password" class="arr">
+            <br>
+            <input type="checkbox" id="rmb"><label for="rmb">Keep me logged in</label><br><br>
+            <button style="background-color:rgb(91, 91, 240);color: white; border-radius: 100px;" class="box1">Signin</button><br>
+            <p>By clicking Continue, you agree to LinkedIn’s <a href="https://www.linkedin.com/legal/user-agreement">User Agreement</a>,<br> 
+               <a href="https://www.linkedin.com/legal/privacy-policy">Privacy Policy</a>, and 
+               <a href="https://www.linkedin.com/legal/cookie-policy">Cookie Policy</a>.
+            </p>
+            <button style="border-radius: 40px;" class="box1">Continue with Google</button><br><br>
+            <select style="border-radius: 40px;" class="box1">
+                <option>Sign in as</option>
+                <option>Use another Microsoft account</option>
+            </select><br><br>
+            <button style="border-radius: 40px;" class="box1">Signin with Apple</button>
+        </div>
+    </div>
+</body>
+</html>
